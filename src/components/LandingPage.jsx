@@ -11,8 +11,8 @@ const LandingPage = () => {
                         <img src="https://source.unsplash.com/random" alt="Photos" />
                     </div>
                     <div className="box2">
-                        <p>10x Team 04</p>
-                        <Link to='/PostView'><button>Enter</button></Link>
+                       <b><p>INSTA CLONE  PROJECT</p></b> 
+                        <Link to='/PostView'><button class="btn btn-outline-success">Enter</button></Link>
                     </div>                
                 </div>
             </div> 

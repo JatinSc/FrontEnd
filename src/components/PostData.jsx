@@ -134,9 +134,10 @@ const PostData = () => {
 {/* types of encoding - While multipart or form-data allows the files to be included in the form data, text/ plain sends the data as plain text without encoding. It is used for debugging and not for production. The application/x-www-form-urlencoded encodes the data as query string – separating key – value pairs assigned with “ = “ and other symbols like “&.” */}
             <form onSubmit={handleSubmit} >
 {/* Also, in the form tag, we have specified the action attribute to #. This is because we haven’t made any API endpoint to receive the data from this form. we will create that in backend */}
-                <div>
+                <div className='input-group mb-3'>
                     {/* <input className="form-control mb-3" type="text" placeholder='No file choosen' /> */}
-                    <input className="form-control mb-3" type="file" id="postData"   
+                    <label class="input-group-text" for="postData">Upload</label>
+                    <input className="form-control" type="file" id="postData , inputGroupFile02"   
                     // onChange={handleFileInputChange}
                     onChange={e => { 
                         // finalData({...intialData, imageData: e.target.files})
@@ -174,7 +175,7 @@ finaldescription( e.target.value)
         </div>
         {/* <Link to='/PostView'><button type="submit"  >Post</button></Link> */}
        <div className="button">
-       <button type="submit" className="btn btn-success">Post</button>
+       <button type="submit" className="btn btn-outline-success">Post</button>
         </div> 
         
             </form>

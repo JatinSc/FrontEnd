@@ -13,6 +13,7 @@ img {
     width: 30%;
     height: 500px;
     margin: 20vh auto;
+    border: 4px solid rgb(0, 197, 108);
     /* justify-content: center; */
     box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 
@@ -23,5 +24,12 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
     /* padding-left: 2em; */
+}
+p{
+    color: rgb(0, 173, 115);
+}
+button{
+    
 }
