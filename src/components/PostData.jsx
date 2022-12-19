@@ -71,7 +71,7 @@ const PostData = () => {
             for (var key of data.entries()) {
                 console.log(key[0] + ', ' + key[1])
             }
-            let url = "http://localhost:3001/PostData";
+            let url = "https://jatinsinstaclone.onrender.com/PostData";
             axios.post(url,data
             // axios.post("http://localhost:3000/PostData", intialData
             // ,{headers: {
