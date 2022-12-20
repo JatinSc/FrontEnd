@@ -12,9 +12,9 @@ const PostView = () => {
 
     useEffect( () => {
         async function getData() {
-            let url = "https://jatinsinstaclone.onrender.com/PostView";
+            let url = "http://localhost:3001/PostView";
             await axios.get(url)
-            // await axios.get('http://localhost:3000/PostView')
+            // await axios.get('http://localhost:3001/PostView')
             .then(ress =>{
                 console.log(ress)
                 updateState(ress.data)

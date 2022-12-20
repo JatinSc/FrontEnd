@@ -71,9 +71,9 @@ const PostData = () => {
             for (var key of data.entries()) {
                 console.log(key[0] + ', ' + key[1])
             }
-            let url = "https://jatinsinstaclone.onrender.com/PostData";
+            let url = "http://localhost:3001/PostData";
             axios.post(url,data
-            // axios.post("http://localhost:3000/PostData", intialData
+            // axios.post("http://localhost:3001/PostData", intialData
             // ,{headers: {
             //         'Content-Type': 'multipart/form-data' }}
                     ).then(res =>{
@@ -136,7 +136,7 @@ const PostData = () => {
 {/* Also, in the form tag, we have specified the action attribute to #. This is because we haven’t made any API endpoint to receive the data from this form. we will create that in backend */}
                 <div className='input-group mb-3'>
                     {/* <input className="form-control mb-3" type="text" placeholder='No file choosen' /> */}
-                    <label class="input-group-text" for="postData">Upload</label>
+                    <label className="input-group-text" htmlFor="postData">Upload</label>
                     <input className="form-control" type="file" id="postData , inputGroupFile02"   
                     // onChange={handleFileInputChange}
                     onChange={e => { 
